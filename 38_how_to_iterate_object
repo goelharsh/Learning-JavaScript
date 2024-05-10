@@ -1,0 +1,39 @@
+//how to iterate object
+
+const person={
+    name:"harsh",
+    age:22,
+    hobbies:["guitar","sleeping","listening music"]
+}
+
+
+
+// for in loop
+// Object.keys
+
+
+// for(let key in person){
+//     console.log(person[key]);
+// }
+
+
+// for(let key in person){
+    // console.log(`${key}:${person[key]}`);
+// }
+
+// for(let key in person){
+//     console.log(key,person[key]);
+// }
+
+
+
+// console.log(Object.keys(person));   // it will return everything in the form of array
+
+// const val=Array.isArray(Object.keys(person))
+// console.log(val)
+
+
+
+for(let key of Object.keys(person)){
+    console.log(person[key])
+}
